@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+
+
+body {
+	font-family: Hannotate SC;
+	background-color: floralwhite;
+	text-align: center;
+}
+
+.h1 {
+	font-size: 50px;
+	color: #444444;
+
+}
+
+.btn {
+	color: floralwhite;
+	text-align: center;
+	font-size: 35px;
+	background-color: #5D99FF;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 0px;
+	padding: 5px 20px 5px 20px;
+	margin: 10px 10px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.return {
+	margin-top: 50px;
+}
+
+
+.serch {
+	font-size: 40px;
+	color: #444444;
+	text-align: center;
+
+}
+
+.insert {
+	font-size: 40px;
+	color: #444444;
+	text-align: center;
+
+}
+
+
+
+.vocabulary {
+	display: inline-block;
+	width: 50%;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	background: #f2f2f2;
+	margin: 0.5em 0;
+	line-height: 1.5;
+	height: 3em;
+	font-size: 20px;
+
+}
+
+.meaning {
+	display: inline-block;
+	width: 50%;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	background: #f2f2f2;
+	margin: 0.5em 0;
+	line-height: 1.5;
+	height: 10em;
+	font-size: 20px;
+}
+
+.serchname {
+	display: inline-block;
+	width: 20%;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	background: #f2f2f2;
+	margin: 0.5em 0;
+	line-height: 1.5;
+	height: 3em;
+	font-size: 20px;
+}

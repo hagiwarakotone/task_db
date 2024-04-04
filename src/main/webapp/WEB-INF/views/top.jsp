@@ -5,8 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>top画面</title>
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+
+	<h1 class="h1">IT用語ライブラリ</h1>
 	<a href="/menu" class="btn">始める</a>
 
 </body>

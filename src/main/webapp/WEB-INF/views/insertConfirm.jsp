@@ -4,15 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>メニュー画面</title>
+<title>登録完了画面</title>
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-	<a href="/serch" class="btn">検索</a>
-		</br>
-	<a href="/insert" class="btn">新規作成</a>
-	</br>
-	<a href="/" class="return">戻る</a>
+	<h1 class="h1">登録完了です！！</h1>
+	<a href="/menu" class="returnMenu">メニューへ戻る</a>
+
 </body>
 </html>

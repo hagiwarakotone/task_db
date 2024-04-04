@@ -4,15 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>メニュー画面</title>
+<title>検索結果画面</title>
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
-	<a href="/serch" class="btn">検索</a>
-		</br>
-	<a href="/insert" class="btn">新規作成</a>
-	</br>
-	<a href="/" class="return">戻る</a>
+	<h1>↓↓検索結果↓↓</h1>
 </body>
 </html>

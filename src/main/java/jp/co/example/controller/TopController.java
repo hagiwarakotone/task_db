@@ -14,7 +14,17 @@ public class TopController {
 	}
 
 	@RequestMapping("/menu")
-	public String shownemu() {
+	public String showMemu() {
 		return "menu";
+	}
+
+	@RequestMapping("/serch")
+	public String showSerch() {
+		return "serch";
+	}
+
+	@RequestMapping("/insert")
+	public String showInsrt() {
+		return "insert";
 	}
 }
