@@ -23,8 +23,8 @@ public class TopController {
 		return "serch";
 	}
 
-	@RequestMapping("/insert")
-	public String showInsrt() {
-		return "insert";
-	}
+	//	@RequestMapping("/insert")
+	//	public String showInsrt() {
+	//		return "insert";
+	//	}
 }

@@ -10,15 +10,17 @@
 <body>
 	<div>
 
-
+<form:form modelAttribute=""method="post"action="/sertchResult">
 		<h1 class="h1">
-			検索したい単語を入力してください。 </br> 空白検索の場合は全件表示します。
+			検索したい単語を入力してください。
+			 </br> 空白検索の場合は全件表示します。
 		</h1>
 
 
 		<div class="serch">
 			<p>
-				単語名: <input type="text" name="serchname" class="serchname">
+				単語名:
+				<form:input type="text" path="serchname" class="serchname" />
 			</p>
 
 		</div>
