@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,22 +10,28 @@
 </head>
 <body>
 	<div>
+		<%
+		String message = (String) request.getAttribute("noDataMassage");
+		if (message != null && !message.isEmpty()) {
+		%>
+		<span class="error"><%=message%></span>
+		<%
+		}
+		%>
 
-<form:form modelAttribute=""method="post"action="/sertchResult">
-		<h1 class="h1">
-			検索したい単語を入力してください。
-			 </br> 空白検索の場合は全件表示します。
-		</h1>
+		<form:form modelAttribute="serch" method="post" action="/sertchResult">
+			<h1 class="h1">
+				検索したい単語を入力してください。 </br> 空白検索の場合は全件表示します。
+			</h1>
 
 
-		<div class="serch">
-			<p>
-				単語名:
-				<form:input type="text" path="serchname" class="serchname" />
-			</p>
+			<div class="serch">
+				<p>
+					単語名:
+					<form:input type="text" path="serchname" class="serchname" />
+				</p>
 
-		</div>
-
+			</div>
 	</div>
 
 

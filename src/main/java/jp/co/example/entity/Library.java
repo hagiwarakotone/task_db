@@ -5,15 +5,15 @@ public class Library {
 
 	//検索、登録したものは全てLibrary型で扱う
 
-	private String vocabulary;
+	private String vocabularys;
 	private String meaning;
 
-	public String getVocabulary() {
-		return vocabulary;
+	public String getVocabularys() {
+		return vocabularys;
 	}
 
-	public void setVocabulary(String vocabulary) {
-		this.vocabulary = vocabulary;
+	public void setVocabularys(String vocabularys) {
+		this.vocabularys = vocabularys;
 	}
 
 	public String getMeaning() {

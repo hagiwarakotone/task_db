@@ -1,14 +1,14 @@
 package jp.co.example.controller.form;
 
 public class serchForm {
-	private String serchname;
+	private String serchName;
 
-	public String getSerchname() {
-		return serchname;
+	public String getSerchName() {
+		return serchName;
 	}
 
-	public void setSerchname(String serchname) {
-		this.serchname = serchname;
+	public void setSerchName(String serchName) {
+		this.serchName = serchName;
 	}
 
 }
