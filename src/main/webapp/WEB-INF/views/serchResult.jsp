@@ -9,5 +9,11 @@
 </head>
 <body>
 	<h1>↓↓検索結果↓↓</h1>
+
+
+
+
+
+	<a href="/menu" class="returnMenu">メニューへ戻る</a>
 </body>
 </html>

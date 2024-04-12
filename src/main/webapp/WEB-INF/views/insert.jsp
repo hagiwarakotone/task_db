@@ -15,15 +15,15 @@
 		action="/insertConfirm">
 		<div class="insert">
 			<p>
-				<form:errors path="vocabulary" cssStyle="color:red" />
+				<form:errors path="insertVocabularys" cssStyle="color:red" />
 				単語:
-				<form:input type="text" path="vocabulary" class="vocabulary" />
+				<form:input type="text" path="insertVocabularys" class="vocabularys" />
 			</p>
 
 			<p>
-				<form:errors path="meaning" cssStyle="color:red" />
+				<form:errors path="insertMeaning" cssStyle="color:red" />
 				意味:
-				<form:input type="text" path="meaning" class="meaning" />
+				<form:input type="text" path="insertMeaning" class="insertMeaning" />
 			</p>
 
 			<button type="submit" class="btn">登録する</button>

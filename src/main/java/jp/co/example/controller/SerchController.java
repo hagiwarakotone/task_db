@@ -16,9 +16,13 @@ public class SerchController {
 	private ProductDao productDao;
 
 	@RequestMapping("/serchResult")
-	
+
 	public String serch(@ModelAttribute("serch") serchForm form, Model model) {
 
+		System.out.println("検索ボタンが押されコントロールに到達");
+		
+		
+		
 		String vocabularys = form.getSerchName();
 
 		//から文字だった場合
@@ -31,7 +35,7 @@ public class SerchController {
 			boolean matchVoc = productDao.existVocabulary(vocabularys);
 			//単語がある＝true,単語がない＝falseかをifで判定
 			if (matchVoc == false) {
-				model.addAttribute("noVocMassage", "入力された単語が見つかりませんでした。");
+				model.addAttribute("noVocMassage", "※入力された単語が見つかりませんでした。");
 				System.out.println("その単語ないです");
 				return "serch";
 			} else {

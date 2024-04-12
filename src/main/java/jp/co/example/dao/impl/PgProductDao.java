@@ -21,7 +21,8 @@ public class PgProductDao implements ProductDao {
 	public List<Library> getAll() {
 		List<Library> libList = new ArrayList<>();
 		String sql = "SELECT * FROM vocabulary";
-		return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Library.class));
+		libList=jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Library.class));
+		return libList;
 	}
 
 	//一致する単語があるか（serch)
