@@ -21,7 +21,7 @@ public class PgProductDao implements ProductDao {
 	public List<Library> getAll() {
 		List<Library> libList = new ArrayList<>();
 		String sql = "SELECT * FROM vocabulary";
-		libList=jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Library.class));
+		libList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Library.class));
 		return libList;
 	}
 
@@ -42,13 +42,13 @@ public class PgProductDao implements ProductDao {
 
 	//該当のレコード一件を取ってくる
 	@Override
-	public List<Library> getRecord(String vocablarys) {
+	public List<Library> getRecord(String vocabularys) {
 		String sql = "SELECT vocabularys,meaning FROM vocabulary WHERE vocabularys=?";
-		List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql);
+		List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql, vocabularys);
 		List<Library> recordList = new ArrayList<>();
 		for (Map<String, Object> row : rows) {
 			Library lib = new Library();
-			lib.setVocabularys((String) row.get("vocabulary"));
+			lib.setVocabularys((String) row.get("vocabularys"));
 			lib.setMeaning((String) row.get("meaning"));
 			recordList.add(lib);
 		}

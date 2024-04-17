@@ -20,9 +20,7 @@ public class SerchController {
 	public String serch(@ModelAttribute("serch") serchForm form, Model model) {
 
 		System.out.println("検索ボタンが押されコントロールに到達");
-		
-		
-		
+
 		String vocabularys = form.getSerchName();
 
 		//から文字だった場合
@@ -39,8 +37,10 @@ public class SerchController {
 				System.out.println("その単語ないです");
 				return "serch";
 			} else {
-				model.addAttribute("VocAndMean", matchVoc);
+
+				model.addAttribute("VocAndMean", productDao.getRecord(vocabularys));
 				System.out.println("一件発見");
+				System.out.println(productDao.getRecord(vocabularys));
 				return "serchResult";
 			}
 
