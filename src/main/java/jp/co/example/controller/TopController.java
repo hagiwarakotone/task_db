@@ -4,7 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import jp.co.example.controller.form.serchForm;
+import jp.co.example.controller.form.InsertForm;
+import jp.co.example.controller.form.SerchForm;
 
 //最初のTop.jspの表示からnemu.jspの画面遷移
 
@@ -23,12 +24,13 @@ public class TopController {
 
 	@RequestMapping("/serch")
 	public String showSerch(Model model) {
-		model.addAttribute("serch", new serchForm());
+		model.addAttribute("serch", new SerchForm());
 		return "serch";
 	}
 
-	//	@RequestMapping("/insert")
-	//	public String showInsrt() {
-	//		return "insert";
-	//	}
+	@RequestMapping("/insert")
+	public String showInsrt(Model model) {
+		model.addAttribute("insert", new InsertForm());
+		return "insert";
+	}
 }

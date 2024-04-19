@@ -1,6 +1,6 @@
 package jp.co.example.controller.form;
 
-public class topForm {
+public class TopForm {
 
 	private String vocabularys;
 	private String meaning;

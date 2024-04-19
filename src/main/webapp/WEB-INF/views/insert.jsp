@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<form:form modelAttribute="insertForm" method="post"
+	<form:form modelAttribute="insert" method="post"
 		action="/insertConfirm">
 		<div class="insert">
 			<p>

@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import jp.co.example.controller.form.serchForm;
+import jp.co.example.controller.form.SerchForm;
 import jp.co.example.dao.ProductDao;
 
 @Controller
@@ -16,8 +16,7 @@ public class SerchController {
 	private ProductDao productDao;
 
 	@RequestMapping("/serchResult")
-
-	public String serch(@ModelAttribute("serch") serchForm form, Model model) {
+	public String serch(@ModelAttribute("serch") SerchForm form, Model model) {
 
 		System.out.println("検索ボタンが押されコントロールに到達");
 

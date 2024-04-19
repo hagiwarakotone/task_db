@@ -1,30 +1,25 @@
 package jp.co.example.controller.form;
 
-import javax.validation.constraints.NotBlank;
-
 public class InsertForm {
 
-	@NotBlank
-	private String vocabulary;
-	@NotBlank
-	private String meaning;
-	
-	
+	private String insertVocabularys;
 
-	public String getVocabulary() {
-		return vocabulary;
+	private String insertMeaning;
+
+	public String getInsertVocabularys() {
+		return insertVocabularys;
 	}
 
-	public void setVocabulary(String vocabulary) {
-		this.vocabulary = vocabulary;
+	public void setInsertVocabularys(String insertVocabularys) {
+		this.insertVocabularys = insertVocabularys;
 	}
 
-	public String getMeaning() {
-		return meaning;
+	public String getInsertMeaning() {
+		return insertMeaning;
 	}
 
-	public void setMeaning(String meaning) {
-		this.meaning = meaning;
+	public void setInsertMeaning(String insertMeaning) {
+		this.insertMeaning = insertMeaning;
 	}
 
 }

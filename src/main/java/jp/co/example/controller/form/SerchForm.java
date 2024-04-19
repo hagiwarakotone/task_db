@@ -1,6 +1,6 @@
 package jp.co.example.controller.form;
 
-public class serchForm {
+public class SerchForm {
 	private String serchName;
 
 	public String getSerchName() {
