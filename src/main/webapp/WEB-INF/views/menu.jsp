@@ -13,6 +13,6 @@
 		</br>
 	<a href="/insert" class="btn">新規作成</a>
 	</br>
-	<a href="/" class="return">戻る</a>
+	<a href="/" class="href">戻る</a>
 </body>
 </html>

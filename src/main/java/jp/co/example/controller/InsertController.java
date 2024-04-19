@@ -23,28 +23,28 @@ public class InsertController {
 
 		if ((vocabularys == null || vocabularys.isEmpty()) && (meaning == null || meaning.isEmpty())) {
 			System.out.println("どっちも空欄のままボタン押しやがったな");
-			model.addAttribute("errorInsert", "単語名と意味はどちらも必須入力です！");
+			model.addAttribute("errorInsert", "※単語名と意味はどちらも必須入力です！");
 			return "insert";
 		} else if (vocabularys == null || vocabularys.isEmpty()) {
 			System.out.println("単語名が空欄のままボタン押しやがったな");
-			model.addAttribute("errorInsert", "単語名は必須入力です！");
+			model.addAttribute("errorInsert", "※単語名は必須入力です！");
 			return "insert";
 
 		} else if (meaning == null || meaning.isEmpty()) {
 			System.out.println("意味が空欄のままボタンを押しやがったな");
-			model.addAttribute("errorInsert", "意味は必須入力です！");
+			model.addAttribute("errorMean", "※意味は必須入力です！");
 			return "insert";
 		} else {
 
 			boolean matchVoc = productDao.existVocabulary(vocabularys);
 			if (matchVoc == true) {
 				System.out.println("重複単語だよ〜〜");
-				model.addAttribute("errorInsert", "この単語は既にあるのだ！");
+				model.addAttribute("errorInsert", "※この単語は既にあるのだ！");
 				return "insert";
 			} else {
-				System.out.println("全部合格〜新しく追加するよ〜〜");
 				productDao.insertLibrary(vocabularys, meaning);
-				return "inserConfirm";
+				System.out.println("全部合格〜新しく追加するよ〜〜");
+				return "insertConfirm";
 
 			}
 		}

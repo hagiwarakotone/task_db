@@ -14,10 +14,18 @@ body {
 
 }
 
+.href {
+		color: rgb(4, 50, 255);
+	text-align: center;
+	font-size:25px;
+	
+
+}
+
 .btn {
 	color: floralwhite;
 	text-align: center;
-	font-size: 35px;
+	font-size: 40px;
 	background-color: #5D99FF;
 	border-radius: 10px;
 	cursor: pointer;
@@ -58,41 +66,17 @@ body {
 }
 
 .serchList {
-	font-size: 40%;
+	font-size: 120%;
 	display: inline-block;
-	/* ブロック要素として扱う */
 	text-align: left;
-	/* 中の要素を左揃えに */
+	width: 80%;
+	padding-left: 20px;
 }
 
 
 
-.vocabulary {
-	display: inline-block;
-	width: 50%;
-	border: 1px solid #999;
-	box-sizing: border-box;
-	background: #f2f2f2;
-	margin: 0.5em 0;
-	line-height: 1.5;
-	height: 3em;
-	font-size: 20px;
 
-}
-
-.meaning {
-	display: inline-block;
-	width: 50%;
-	border: 1px solid #999;
-	box-sizing: border-box;
-	background: #f2f2f2;
-	margin: 0.5em 0;
-	line-height: 1.5;
-	height: 10em;
-	font-size: 20px;
-}
-
-.serchName {
+.text {
 	display: inline-block;
 	width: 20%;
 	border: 1px solid #999;

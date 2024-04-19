@@ -10,7 +10,7 @@
 <body>
 
 	<h1 class="h1">登録完了です！！</h1>
-	<a href="/menu" class="returnMenu">メニューへ戻る</a>
+	<a href="/menu" class="href">メニューへ戻る</a>
 
 </body>
 </html>

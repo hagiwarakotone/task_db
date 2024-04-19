@@ -40,6 +40,11 @@ public class PgProductDao implements ProductDao {
 		jdbcTemplate.update(sql, vocabularys, meaning);
 	}
 
+	public void deleteLibrary(String vocabularys, String meaning) {
+		String sql = "DELETE FROM vocabulary　WHERE vocabularys=?,AND meaning=?";
+		jdbcTemplate.update(sql, vocabularys, meaning);
+	}
+
 	//該当のレコード一件を取ってくる
 	@Override
 	public List<Library> getRecord(String vocabularys) {
@@ -54,4 +59,5 @@ public class PgProductDao implements ProductDao {
 		}
 		return recordList;
 	}
+
 }

@@ -18,4 +18,7 @@ public interface ProductDao {
 	//空欄submitによる全件検索○
 	List<Library> getAll();
 
+	//削除機能
+	void deleteLibrary(String vocabularys, String meaning);
+
 }

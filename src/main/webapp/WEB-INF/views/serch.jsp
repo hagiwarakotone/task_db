@@ -32,7 +32,7 @@
 			<div class="serch">
 				<p>
 					単語名:
-					<form:input type="text" path="serchName" class="serchName" />
+					<form:input type="text" path="serchName" class="text" />
 				</p>
 			</div>
 			<button type="submit" class="btn">検索</button>
@@ -42,6 +42,6 @@
 
 
 
-	<a href="/menu" class="returnMenu">メニューへ戻る</a>
+	<a href="/menu" class="href">メニューへ戻る</a>
 </body>
 </html>

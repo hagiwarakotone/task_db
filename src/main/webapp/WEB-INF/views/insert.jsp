@@ -14,16 +14,34 @@
 	<form:form modelAttribute="insert" method="post"
 		action="/insertConfirm">
 		<div class="insert">
+
+			<%
+			String message1 = (String) request.getAttribute("errorInsert");
+			if (message1 != null && !message1.isEmpty()) {
+			%>
+			<span class="error"><%=message1%></span>
+			<%
+			}
+			%>
 			<p>
 				<form:errors path="insertVocabularys" cssStyle="color:red" />
 				単語:
-				<form:input type="text" path="insertVocabularys" class="vocabularys" />
+				<form:input type="text" path="insertVocabularys" class="text" />
 			</p>
 
+
+			<%
+			String message2 = (String) request.getAttribute("errorMean");
+			if (message2 != null && !message2.isEmpty()) {
+			%>
+			<span class="error"><%=message2%></span>
+			<%
+			}
+			%>
 			<p>
 				<form:errors path="insertMeaning" cssStyle="color:red" />
 				意味:
-				<form:input type="text" path="insertMeaning" class="insertMeaning" />
+				<form:input type="text" path="insertMeaning" class="text" />
 			</p>
 
 			<button type="submit" class="btn">登録する</button>
@@ -31,6 +49,6 @@
 
 		</div>
 	</form:form>
-	<a href="/menu" class="returnMenu">メニューへ戻る</a>
+	<a href="/menu" class="href">メニューへ戻る</a>
 </body>
 </html>
