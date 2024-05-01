@@ -40,9 +40,11 @@ public class PgProductDao implements ProductDao {
 		jdbcTemplate.update(sql, vocabularys, meaning);
 	}
 
-	public void deleteLibrary(String vocabularys, String meaning) {
-		String sql = "DELETE FROM vocabulary　WHERE vocabularys=?,AND meaning=?";
-		jdbcTemplate.update(sql, vocabularys, meaning);
+	//レコードを削除してそのレコードの単語名を戻り値として返す。
+	public void deleteLibrary(String vocabularys) {
+		System.out.println("Product:" + vocabularys);
+		String sql = "DELETE FROM vocabulary WHERE vocabularys=?";
+		jdbcTemplate.update(sql, vocabularys);
 	}
 
 	//該当のレコード一件を取ってくる

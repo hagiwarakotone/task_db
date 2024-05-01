@@ -19,6 +19,6 @@ public interface ProductDao {
 	List<Library> getAll();
 
 	//削除機能
-	void deleteLibrary(String vocabularys, String meaning);
+	void deleteLibrary(String vocabularys);
 
 }

@@ -6,8 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import jp.co.example.controller.form.DeleteForm;
 import jp.co.example.controller.form.SerchForm;
-import jp.co.example.controller.form.TopForm;
 import jp.co.example.dao.ProductDao;
 
 @Controller
@@ -20,8 +20,8 @@ public class SerchController {
 	public String serch(@ModelAttribute("serch") SerchForm form, Model model) {
 
 		System.out.println("検索ボタンが押されコントロールに到達");
-
 		String vocabularys = form.getSerchName();
+		System.out.println(vocabularys);
 
 		//から文字だった場合
 		if (vocabularys == null || vocabularys.isEmpty()) {
@@ -37,8 +37,9 @@ public class SerchController {
 				System.out.println("その単語ないです");
 				return "serch";
 			} else {
+				DeleteForm deleteForm = new DeleteForm(); // deleteFormオブジェクトを作成
+				model.addAttribute("deleteForm", deleteForm);
 				model.addAttribute("VocAndMean", productDao.getRecord(vocabularys));
-				model.addAttribute("delete", new TopForm());
 
 				System.out.println("一件発見");
 				System.out.println(productDao.getRecord(vocabularys));
