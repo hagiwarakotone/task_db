@@ -3,38 +3,58 @@
 
 
 body {
+	background-image: url(../img/LibraryIMG.jpg);
+	background-color: rgba(255, 255, 255, 0.4);
+	background-blend-mode: lighten;
 	font-family: Hannotate SC;
-	background-color: floralwhite;
 	text-align: center;
 }
 
+.top {
+	font-size: 70px;
+	width: 50%;
+	padding: 10px;
+	margin: 20px auto;
+	text-align: center;
+	color: rgb(198, 170, 251);
+	background-color: rgb(29, 21, 111);
+	border-radius: 30px;
+}
+
+
 .h1 {
 	font-size: 50px;
-	color: #444444;
+	padding: 10px;
+	color: (191, 191, 240);
+	background-color: rgb(65, 49, 107);
+	border-radius: 10px;
+
 
 }
 
 .href {
-		color: rgb(4, 50, 255);
+	color: rgb(4, 50, 255);
 	text-align: center;
-	font-size:25px;
-	
+	font-size: 25px;
+
 
 }
 
 .btn {
-	color: floralwhite;
+	color: rgb(191, 191, 240);
 	text-align: center;
 	font-size: 40px;
-	background-color: #5D99FF;
+	background-color: rgb(65, 49, 107);
 	border-radius: 10px;
 	cursor: pointer;
 	border: 0px;
 	padding: 5px 20px 5px 20px;
-	margin: 10px 10px;
+	margin: 20px 20px;
 	text-decoration: none;
 	display: inline-block;
 }
+
+
 
 .return {
 	margin-top: 50px;

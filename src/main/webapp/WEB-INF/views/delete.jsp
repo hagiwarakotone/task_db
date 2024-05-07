@@ -8,16 +8,16 @@
 <head>
 <meta charset="UTF-8">
 <title>削除画面</title>
+<link href="css/style.css" rel="stylesheet">
 
-
-
-<h1>
-
-	<%=(String) request.getAttribute("delete")%>
-	を削除しました。
-</h1>
 </head>
 <body>
+	<h1>
 
+		<%=(String) request.getAttribute("delete")%>
+		を削除しました。
+	</h1>
+
+	<a href="/menu" class="href">メニューへ戻る</a>
 </body>
 </html>

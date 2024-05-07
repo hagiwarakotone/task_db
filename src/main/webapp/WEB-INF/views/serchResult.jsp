@@ -58,7 +58,8 @@
 		<form:hidden path="vocabularys"
 			value="<%=vocAndMeanList.get(0).getVocabularys()%>" />
 
-		<button type="submit" class="btn">削除</button>
+		<button type="submit" class="tn">削除</button>
+
 		<%
 		}
 		%>

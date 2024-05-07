@@ -13,8 +13,6 @@
 	<div>
 
 
-
-
 		<form:form modelAttribute="serch" method="post" action="/serchResult">
 			<h1 class="h1">
 				検索したい単語を入力してください。 </br> 空白検索の場合は全件表示します。
