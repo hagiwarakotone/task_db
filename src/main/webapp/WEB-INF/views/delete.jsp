@@ -11,7 +11,7 @@
 <link href="css/style.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="test">
 	<h1>
 
 		<%=(String) request.getAttribute("delete")%>

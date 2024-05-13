@@ -9,7 +9,8 @@
 <title>検索画面</title>
 <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="test">
+
 	<div>
 
 
@@ -19,13 +20,13 @@
 			</h1>
 
 			<%
-			String message = (String) request.getAttribute("noVocMassage");
-			if (message != null && !message.isEmpty()) {
-			%>
+				String message = (String) request.getAttribute("noVocMassage");
+				if (message != null && !message.isEmpty()) {
+				%>
 			<span class="error"><%=message%></span>
 			<%
-			}
-			%>
+				}
+				%>
 
 			<div class="serch">
 				<p>
@@ -34,7 +35,6 @@
 				</p>
 			</div>
 			<button type="submit" class="btn">検索</button>
-
 		</form:form>
 	</div>
 

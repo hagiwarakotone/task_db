@@ -13,17 +13,18 @@
 <title>検索結果画面</title>
 <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="test">
+
 	<div class="serchResult">
-		<h1>↓↓検索結果↓↓</h1>
+		<h1 class="h1">↓↓検索結果↓↓</h1>
 
 
 		<div class="serchList">
-			<table border="1" table="table">
+			<table border="1" table="table" class="table">
 				<thead>
 					<tr>
-						<th>単語</th>
-						<th>意味</th>
+						<th class=th1>単語</th>
+						<th class=th2>意味</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -48,23 +49,25 @@
 
 			</table>
 		</div>
-		<a href="/menu" class="href">メニューへ戻る</a>
+
+		<form:form action="/delete" modelAttribute="deleteForm">
+			<%
+			if (count == 1) {
+			%>
+			<form:hidden path="vocabularys"
+				value="<%=vocAndMeanList.get(0).getVocabularys()%>" />
+
+			<button type="submit" class="btn">削除</button>
+
+			<%
+			}
+			%>
+		</form:form>
+		</br> <a href="/menu" class="href">メニューへ戻る</a>
+
+
+
+
 	</div>
-
-	<form:form action="/delete" modelAttribute="deleteForm">
-		<%
-		if (count == 1) {
-		%>
-		<form:hidden path="vocabularys"
-			value="<%=vocAndMeanList.get(0).getVocabularys()%>" />
-
-		<button type="submit" class="tn">削除</button>
-
-		<%
-		}
-		%>
-	</form:form>
-
-
 </body>
 </html>

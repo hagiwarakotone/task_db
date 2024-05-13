@@ -1,44 +1,29 @@
 @charset "UTF-8";
 
+html {
 
-
-body {
 	background-image: url(../img/LibraryIMG.jpg);
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.3);
 	background-blend-mode: lighten;
+}
+
+
+
+.test {
 	font-family: Hannotate SC;
 	text-align: center;
+	background-color: rgba(244, 240, 222, 0.9);
+	padding: 9%;
+	margin: 5%;
 }
 
 .top {
-	font-size: 70px;
-	width: 50%;
-	padding: 10px;
-	margin: 20px auto;
-	text-align: center;
-	color: rgb(198, 170, 251);
-	background-color: rgb(29, 21, 111);
-	border-radius: 30px;
+	margin: 10% auto auto auto;
 }
 
 
-.h1 {
-	font-size: 50px;
-	padding: 10px;
-	color: (191, 191, 240);
-	background-color: rgb(65, 49, 107);
-	border-radius: 10px;
 
 
-}
-
-.href {
-	color: rgb(4, 50, 255);
-	text-align: center;
-	font-size: 25px;
-
-
-}
 
 .btn {
 	color: rgb(191, 191, 240);
@@ -49,10 +34,38 @@ body {
 	cursor: pointer;
 	border: 0px;
 	padding: 5px 20px 5px 20px;
-	margin: 20px 20px;
+	margin: 20px;
 	text-decoration: none;
 	display: inline-block;
+
 }
+
+
+.h1 {
+	font-size: 50px;
+	color: rgb(191, 191, 240);
+	background-color: rgb(65, 49, 107);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.toph1 {
+	font-size: 60px;
+	color: rgb(191, 191, 240);
+	background-color: rgb(65, 49, 107);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.href {
+	color: rgb(4, 50, 255);
+	text-align: center;
+	font-size: 30px;
+	border-radius: 10px;
+	padding: 5px 20px 5px 20px;
+}
+
+
 
 
 
@@ -79,19 +92,22 @@ body {
 }
 
 .serchResult {
+
 	text-align: center;
 	/* 子要素を中央に配置 */
-	width: 100%;
+	width: 70%;
 	/* 親要素の幅を100%に設定 */
 }
 
-.serchList {
-	font-size: 120%;
-	display: inline-block;
-	text-align: left;
-	width: 80%;
-	padding-left: 20px;
+.table {
+	font-size: 150%;
+	text-align: center;
+	width: 150%;
+
+	background-color: floralwhite;
+
 }
+
 
 
 
@@ -107,18 +123,33 @@ body {
 	height: 3em;
 	font-size: 20px;
 
+
 }
+
+.meantext {
+	display: inline-block;
+	width: 50%;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	background: #f2f2f2;
+	margin: 0.5em 0;
+	line-height: 1.5;
+	height: 5em;
+	font-size: 20px;
+
+
+}
+.th1 {
+	width: 20%;
+}
+
+
 
 
 
 .error {
 	color: rgb(233, 51, 51);
 	font-size: 35px;
-}
-
-
-
-.table {
-	text-align: center;
-	padding-top: 20px;
+	background-color: floralwhite;
+	border-radius: 10px;
 }

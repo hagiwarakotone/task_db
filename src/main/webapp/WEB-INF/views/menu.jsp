@@ -7,12 +7,14 @@
 <title>メニュー画面</title>
 <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
 
+
+<body class="test">
 	<a href="/serch" class="btn">検索</a>
-		</br>
+	</br>
 	<a href="/insert" class="btn">新規作成</a>
 	</br>
 	<a href="/" class="href">戻る</a>
 </body>
+
 </html>

@@ -7,9 +7,10 @@
 <title>top画面</title>
 <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="test">
 
-	<h1 class="top">IT用語ライブラリ</h1>
-	<a href="/menu" class="btn">始める</a>
-
+	<div class="top">
+		<h1 class="toph1">IT用語ライブラリ</h1>
+		<a href="/menu" class="btn">始める</a>
+	</div>
 </body>
