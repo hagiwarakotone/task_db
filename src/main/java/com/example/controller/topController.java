@@ -2,6 +2,7 @@ package com.example.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.controller.form.InsertForm;
@@ -25,5 +26,10 @@ public class topController {
 	public String showInsrt(Model model) {
 		model.addAttribute("insert", new InsertForm());
 		return "insert";
+	}
+
+	@RequestMapping("/insertResult")
+	public String showInsertResult(@ModelAttribute("insert") SerchForm form, Model model) {
+		return "insertResult";
 	}
 }

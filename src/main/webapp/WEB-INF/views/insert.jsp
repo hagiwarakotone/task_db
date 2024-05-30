@@ -11,7 +11,7 @@
 <body>
 	<h1 class=top>新規入力画面</h1>
 	<form:form modelAttribute="insert" method="post"
-		action="/insertConfirm">
+		action="/insertResult">
 		<div class="insert">
 			<div class="grupeA">
 				<p class="insertP">
